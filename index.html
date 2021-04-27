@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Covid-19 Country Data Analytics</h1>
+        <section>
+            <div class="container">
+                <div class="form-box">
+                    <form id="form">
+                        <input placeholder="Country Code..." type="text" name="countryCode" id="country-code">
+                    </form>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <div class="photo">
+                        </div>
+                        <div class="content">
+                            <h1 id="title">Title</h1>
+                            <p id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, facilis quisquam esse placeat accusamus dicta eaque aliquid, consectetur saepe natus ducimus? Mollitia obcaecati laboriosam officiis atque, alias facilis sed iste.</p>
+                            <div class="details">
+                                <strong>Deaths:</strong> <span id="deaths">0</span> <strong>Case confirmes:</strong> <span id="case-confirmed">0</span> <strong>Recovered:</strong> <span id="recovered">0</span>
+                                <ul>
+                                    <li>
+                                        Population: <span id="population">0</span>
+                                    </li>
+                                    <li>
+                                        Time: <span id="time">0</span>
+                                    </li>
+                                    <li>
+                                        New Deaths: <span id="new-deaths">0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card notfound">
+                        <h1>No Data Found!</h1>
+                        <br>
+                        <p>Please insert a valid ISO 3166-1 alpha-2 country code!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
