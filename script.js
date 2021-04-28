@@ -15,7 +15,17 @@ function loadDoc() {
 }
 
 function see(obj) {
-    
-}
+    console.log(obj)
+    // obj.data.name
+    document.querySelector("#title").innerText      = obj.data.name;
+    document.querySelector("#deaths").innerText     = obj.data.latest_data.deaths;
+    document.querySelector("#deaths").innerText     = obj.data.latest_data.deaths;
+    document.querySelector("#recovered").innerText  = obj.data.latest_data.recovered;
+    document.querySelector("#population").innerText = obj.data.population;
+    document.querySelector("#time").innerText       = obj.data.timeline.date;
+    document.querySelector("#new-deaths").innerText = obj.data.timeline.new_deaths;
 
-loadDoc();
+
+    document.getElementsByClassName("card")[0].style.display = "block";
+    document.getElementsByClassName("card")[1].style.display = "none";
+}
